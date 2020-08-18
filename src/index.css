@@ -90,10 +90,10 @@ label:hover{
   opacity: 0.8;
 }
 .img-wrap img{
-  min-width: 100%;
-  min-height: 100%;
-  max-width: 150%;
+  width: 100%;
+  height: 100%;
   position: absolute;
+  object-fit: cover;
   top: 0;
   left: 0;
 }
@@ -114,4 +114,22 @@ label:hover{
   margin: 60px auto;
   box-shadow: 3px 5px 7px rgba(0,0,0,0.5);
   border: 3px solid white;
+}
+
+.options {
+  position: absolute;
+  width: 40px;
+  right: 0;
+  bottom: 0;
+  height: 40px;
+  transform: translateY(100%);
+  transition: transform .3s ease-in-out;
+}
+.img-wrap:hover .options {
+  transform: translateY(0);
+}
+.options img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
 }
